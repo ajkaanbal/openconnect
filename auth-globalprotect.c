@@ -501,7 +501,7 @@ static int gpst_login(struct openconnect_info *vpninfo, int portal, struct login
 			append_opt(request_body, "clientos", "Linux");
 		else
 			append_opt(request_body, "clientos", "Windows");
-		append_opt(request_body, "os-version", vpninfo->platname);
+		append_opt(request_body, "os-version", "Microsoft Windows Server 2012, 64-bit");
 		append_opt(request_body, "server", vpninfo->hostname);
 		append_opt(request_body, "computer", vpninfo->localname);
 		if (vpninfo->ip_info.addr)
